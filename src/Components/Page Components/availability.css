@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.availability-container {
+  position: relative;
+  left: 500px;
+  top: -900px;
+  width: 1000px;
+  height: 173px;
+  border: 1px solid #e4e4e7;
+}
+.availability-header {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* gray/900 */
+
+  color: #18181b;
+  padding: 15px;
+}
+.availability-text {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  /* or 169% */
+
+  /* gray/500 */
+  color: #71717a;
+  padding: 15px;
+}
+.available {
+  background-color: green;
+  color: white;
+
+}
+
+.unavailable {
+  background-color: red;
+  color: white;
+}
+.availability-btn-container {
+  position: relative;
+  left: 500px;
+  top: -55px;
+  border:none;
+}
+#availability-btn {
+  height: 52px;
+  width: 419px;
+  left: 872px;
+  top: 323px;
+  border-radius: 10px;
+  border:none;
+}

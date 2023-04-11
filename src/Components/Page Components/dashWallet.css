@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wallet-details-container {
+  position: relative;
+  left: 500px;
+  top: -930px;
+  width:1000px;
+}
+.hello-user {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #101828;
+}
+.wallet-balance-text {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #71717a;
+  padding: 10px;
+}
+.wallet-balance {
+  /* position: relative;
+  top: 20px; */
+  border: 1px solid #e4e4e7;
+  width: 284px;
+  height: 91px;
+}
+.wallet-balance-amount {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  color: #18181b;
+  padding: 10px;
+}
+.sales-container {
+  width: 284px;
+  height: 91px;
+  border: 1px solid #e4e4e7;
+}
+.wallet-sub-containers {
+  position: relative;
+  top: 20px;
+  display: flex;
+  width:1000px; 
+  align-items: center;
+  justify-content: space-between;
+}
+.sales-text {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #71717a;
+  padding: 10px;
+}
+.sales-amount {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  color: #18181b;
+  padding: 10px;
+}
+.orders-container {
+  width: 284px;
+  height: 91px;
+  border: 1px solid #e4e4e7;
+}
+.orders-text {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #71717a;
+  padding: 10px;
+}
+.orders-amount {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  color: #18181b;
+  padding: 10px;
+}

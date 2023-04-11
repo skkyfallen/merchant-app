@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.upload-form-container {
+  display: flex;
+  justify-content: center;
+}
+.upload-form-container img {
+  position: relative;
+  top: 30px;
+  height: 1192px;
+  width: 615px;
+  border-radius: 0px;
+}
+.upload-heading {
+  position: relative;
+  top: -55px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 39px;
+
+  color: #000000;
+}
+.upload-form {
+  position: relative;
+  top: 100px;
+}
+.select-id-head {
+  position: relative;
+  top: -10px;
+  left: -190px;
+}
+.select-id {
+  height: 54px;
+  width: 478px;
+  border-radius: 3px;
+  margin-bottom: 50px;
+}
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upload-id-file {
+}
+.upload-id-file-container {
+  background-color: #f9fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 478px;
+  left: 142px;
+  top: 443px;
+  border-radius: 3px;
+  border: 2px dashed #bcc7d3;
+  margin-bottom: 50px;
+}
+.upload-cac-head {
+  position: relative;
+  top: -10px;
+  left: -150px;
+}
+.upload-cac-file-container {
+  background-color: #f9fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 478px;
+  left: 142px;
+  top: 443px;
+  border-radius: 3px;
+  border: 2px dashed #bcc7d3;
+  margin-bottom: 50px;
+}
+.upload-btn {
+  height: 50px;
+  width: 478px;
+  border-radius: 3px;
+  background-color: #ec7406;
+  border: 1px solid #ec7406;
+  position: relative;
+  top: 100px;
+}

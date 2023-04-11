@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: "Archivo";
+  }
+  .ellipse {
+    position: relative;
+    top: 200px;
+  }
+  .login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+  }
+  .login-form-container h1 {
+    position: relative;
+    top: 100px;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+  }
+  .login-form-container a{
+      color:#EC7406
+  }
+  .login-form {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .field {
+    padding:5px;
+    width: 478px;
+    height: 50px;
+    border-radius: 3px;
+    background: #f9fafc;
+    margin-bottom: 50px;
+  }
+  label {
+      position: relative;
+      left:-190px;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #01112c;
+  }
+  .password-field-label{
+      top:-4px;
+      position: relative;
+      left:-205px;
+  }
+  .login-btn{
+      height: 50px;
+      width: 478px;
+      border-radius: 3px;
+      background: #EC7406;
+      color:white;
+      border:1px solid #EC7406;
+      margin-bottom:15px;
+  }
+  

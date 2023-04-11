@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+ 
+}
+
+.form-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  height:960px;
+  position: relative;
+  top:20px;
+}
+.form-Container img {
+  width: 615px;
+  height: 960px;
+}
+form h1 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 39px;
+  color: #000000;
+  position: relative;
+  top:40px
+}
+
+.form-field {
+  position: relative;
+  top: 150px;
+  background: #f9fafc;
+  border: 1px solid #bcc7d3;
+  border-radius: 3px;
+  height: 54px;
+  width: 478px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.phone-field {
+  position: relative;
+  top: 150px;
+  left: -135px;
+  background: #f9fafc;
+  border: 1px solid #bcc7d3;
+  border-radius: 3px;
+  height: 54px;
+  width: 200px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding:10px;
+}
+.state-field {
+  position: relative;
+  top: 54px;
+  left: 137px;
+  background: #f9fafc;
+  border: 1px solid #bcc7d3;
+  border-radius: 3px;
+  height: 54px;
+  width: 200px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding:10px;
+}
+
+form {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  /*  justify-content: center; */
+  align-items: center;
+}
+.fullname-label {
+  position: relative;
+  left: -200px;
+  top: 140px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #01112c;
+}
+.business_name-label {
+  position: relative;
+  top: 143px;
+  left: -183px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #01112c;
+}
+.email-label {
+  position: relative;
+  top: 145px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #01112c;
+  left: -185px;
+}
+.phoneNumber-label {
+  position: relative;
+  top: 145px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #01112c;
+  left: -185px;
+}
+.state-label {
+  position: relative;
+  top: 50px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #01112c;
+  left: 55px;
+}
+.store-label {
+  position: relative;
+  top: 60px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #01112c;
+  left: -185px;
+}
+.store-field {
+  position: relative;
+  top: 65px;
+  background: #f9fafc;
+  border: 1px solid #bcc7d3;
+  border-radius: 3px;
+  height: 120px;
+  width: 478px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding:10px;
+}
+.continueButton-1 {
+  position: relative;
+  top: 100px;
+  height: 50px;
+  width: 478px;
+  border-radius: 3px;
+  background: #ec7406;
+  border: 1px solid #ec7406;
+  color: white;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+}
