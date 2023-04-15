@@ -1,10 +1,9 @@
 import React from "react";
 import axios from "axios";
-import { useState,} from "react";
+import { useState } from "react";
 import "./signup.css";
 import { useNavigate } from "react-router-dom";
 import SignUp_img from "../../Assets/Signup_img.png";
-
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -18,7 +17,7 @@ const SignUp = () => {
     event.preventDefault();
     axios
       .post(
-        "https://api-laundry-marketplace.onrender.com/api/v1/auth/merchant/register",
+        "https://laundry-marketplace-api-production.up.railway.app/api/v1/auth/merchant/register",
         {
           fullName: fullName,
           businessName: businessName,
@@ -30,17 +29,14 @@ const SignUp = () => {
       )
       .then((response) => {
         console.log(response.data);
-        const access_token= response.data.data.token;
-        localStorage.setItem('access_token', access_token);
-        navigate("/uploaddocs")
+        const signup_token = response.data.data.token;
+        localStorage.setItem("signup_token", signup_token);
+        navigate("/uploaddocs");
       })
-      .catch((error) => {
-        
-      });
+      .catch((error) => {});
   };
   return (
     <>
-     
       <div className="form-Container">
         <div className="img">
           <img src={SignUp_img} alt="merchant-image" />

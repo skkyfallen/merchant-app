@@ -10,10 +10,10 @@ const Navbar = () => {
     <>
 <nav>
     <ul>
-        <li className={location.pathname==='/'? 'active':''}>
+        <li className={location.pathname==='/dashboard'? 'active':''}>
         <BsWindows className="icons" />
         <span>
-            <NavLink exact to="/" className="nav-link">Dashboard</NavLink>
+            <NavLink exact to="/dashboard" className="nav-link">Dashboard</NavLink>
         </span>
         </li>
         <li className={location.pathname=== '/wallet' ? 'active': ''  }    >

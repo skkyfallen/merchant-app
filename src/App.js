@@ -8,21 +8,24 @@ import SignUp from "./Components/Access Control/SignUp";
 import SetPassword from "./Components/Access Control/SetPassword";
 import Login from "./Components/Access Control/Login";
 import UploadDocs from "./Components/Access Control/UploadDocs";
+import Shop from "./Pages/Shop";
+import AddService from "./Pages/AddService";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<SignUp />} />
+          <Route path="/" element={<Login />} />
           <Route path="/wallet" element={<Wallet />} />
-          <Route path="/shop"></Route>
+          <Route path="/shop" element={<Shop />}></Route>
           <Route path="/history"></Route>
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<MerchantDashboard />} />
           <Route path="/setpassword" element={<SetPassword />} />
           <Route path="/uploaddocs" element={<UploadDocs />} />
+          <Route path="/addService" element={<AddService />} />
         </Routes>
       </div>
     </BrowserRouter>

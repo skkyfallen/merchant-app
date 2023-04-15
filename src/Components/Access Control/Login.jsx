@@ -5,23 +5,20 @@ import { useNavigate } from "react-router-dom";
 import SignUp_img from "../../Assets/Signup_img.png";
 import Ellipse from "../../Assets/Ellipse.png";
 import axios from "axios";
-
+import { BeatLoader } from "react-spinners";
 
 const Login = () => {
   const navigate = useNavigate("");
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
   const [password, setPassword] = useState("");
-  const accessToken = localStorage.getItem("access_token");
-  const config = {
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-    },
-  };
+  localStorage.removeItem("signup_token");
   const handleLoginClick = (event) => {
     event.preventDefault();
+    setLoading(true);
     axios
       .post(
-        "https://api-laundry-marketplace.onrender.com/api/v1/auth/merchant/login",
+        "https://laundry-marketplace-api-production.up.railway.app/api/v1/auth/merchant/login",
         {
           email: email,
           password: password,
@@ -29,8 +26,11 @@ const Login = () => {
       )
       .then((response) => {
         console.log(response.data);
-        
-        navigate("/merchantDashBoard");
+        console.log(response.data.data.token);
+        const login_token = response.data.data.token;
+        localStorage.setItem("login_token", login_token);
+
+        navigate("/dashboard");
       })
       .catch((error) => {
         console.error(error.response);
@@ -71,16 +71,15 @@ const Login = () => {
             className="login-btn"
             onClick={handleLoginClick}
           >
-            Login
+            {loading ? <BeatLoader size={8} color={"#ffffff"} /> : "Submit"}
           </button>
           <p>
-            Dont have an Account?<a href="/forgotPassword">SIGNUP</a>
+            Dont have an Account?<a href="/signup">SIGNUP</a>
           </p>
         </form>
       </div>
 
       <img src={Ellipse} className="ellipse" />
-     
     </>
   );
 };

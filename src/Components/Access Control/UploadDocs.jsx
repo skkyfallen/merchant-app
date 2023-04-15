@@ -5,11 +5,11 @@ import Signup from "../../Assets/Signup_img.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const UploadDocs = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [idImage, setIdImage] = useState(null);
   const [cacImage, setCacImage] = useState(null);
   const [selectedOption, setSelectedOption] = useState("");
-  const accessToken = localStorage.getItem("access_token");
+  const accessToken = localStorage.getItem("signup_token");
   const config = {
     headers: {
       Authorization: `Bearer ${accessToken}`,
@@ -32,7 +32,7 @@ const UploadDocs = () => {
     formData.append("idType", selectedOption);
     axios
       .post(
-        "https://api-laundry-marketplace.onrender.com/api/v1/merchant/profile/documents",
+        "https://laundry-marketplace-api-production.up.railway.app/api/v1/merchant/profile/documents",
         formData,
         {
           headers: {
@@ -44,7 +44,7 @@ const UploadDocs = () => {
       )
       .then((response) => {
         console.log(response.data);
-        navigate("/setpassword")
+        navigate("/setpassword");
       })
       .catch((error) => {
         console.log(error.response);
@@ -90,7 +90,9 @@ const UploadDocs = () => {
               />
             </div>
 
-            <button className="upload-btn" onClick={handleUpload}>Continue</button>
+            <button className="upload-btn" onClick={handleUpload}>
+              Continue
+            </button>
           </form>
         </div>
       </div>

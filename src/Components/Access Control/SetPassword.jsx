@@ -6,14 +6,14 @@ import SignUp_img from "../../Assets/Signup_img.png";
 import "./setPassword.css";
 import { useNavigate } from "react-router-dom";
 const SetPassword = () => {
-    const navigate= useNavigate('/')
+  const navigate = useNavigate("/");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const handleContinueClick = (event) => {
     event.preventDefault();
     axios
       .put(
-        "https://api-laundry-marketplace.onrender.com/api/v1/auth/merchant/set-password",
+        "https://laundry-marketplace-api-production.up.railway.app/api/v1/auth/merchant/set-password",
         {
           password: password,
           confirmPassword: confirmPassword,
@@ -23,13 +23,13 @@ const SetPassword = () => {
       .then((response) => {
         console.log(response.data);
         console.log(accessToken);
-        navigate("/login")
+        navigate("/login");
       })
       .catch((error) => {
         console.log(error);
       });
   };
-  const accessToken = localStorage.getItem("access_token");
+  const accessToken = localStorage.getItem("signup_token");
   const config = {
     headers: {
       Authorization: `Bearer ${accessToken}`,
