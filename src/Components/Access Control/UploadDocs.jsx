@@ -15,20 +15,16 @@ const UploadDocs = () => {
       Authorization: `Bearer ${accessToken}`,
     },
   };
-  const handleIdImageChange = (e) => {
-    setIdImage(e.target.files[0]);
-  };
-  const handleCacImageChange = (e) => {
-    setCacImage(e.target.files[0]);
-  };
+ 
+  
   const handleOptionChange = (e) => {
     setSelectedOption(e.target.value);
   };
   const handleUpload = (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("idImage", idImage);
-    formData.append("cacImage", cacImage);
+    formData.append("ownerID", idImage);
+    formData.append("cacCertificate", cacImage);
     formData.append("idType", selectedOption);
     axios
       .post(
@@ -76,8 +72,9 @@ const UploadDocs = () => {
               <input
                 type="file"
                 className="upload-id-file"
-                accept="image/*"
-                onChange={handleIdImageChange}
+               /*  accept="image/*" */
+                onChange={(event)=> setIdImage(event.target.files[0])}
+                
               />
             </div>
             <p className="upload-cac-head">Upload CAC Document</p>
@@ -85,8 +82,9 @@ const UploadDocs = () => {
               <input
                 type="file"
                 className="upload-cac-file"
-                accept="image/*"
-                onChange={handleCacImageChange}
+                /* accept="image/*" */
+                onChange={(event)=> setCacImage(event.target.files[0])}
+                
               />
             </div>
 

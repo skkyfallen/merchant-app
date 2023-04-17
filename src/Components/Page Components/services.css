@@ -38,6 +38,7 @@
   justify-content: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: 3;
 }
 .service{
     position: relative;
@@ -46,6 +47,9 @@
 .service img{
   position: relative;
   top:-30px;
+  width: 250px;
+  height:250px;
+
 }
 .service h2 {
   font-family: "Raleway";
@@ -81,6 +85,10 @@
   list-style: none;
   flex-direction: row;
   flex-wrap:3;
+}
+.service-list ul{
+  display: flex;
+  flex-wrap: 3;
 }
 .services-list li{
   padding:20px;
